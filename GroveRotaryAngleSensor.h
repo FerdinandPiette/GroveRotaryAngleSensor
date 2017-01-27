@@ -12,11 +12,11 @@ class GroveRotaryAngleSensor {
 		unsigned int _performMesurement(); 
 
 	public:
-		GroveRotaryAngleSensor(GrovePin pins, unsigned int _maxMesurement = 690, unsigned int _maxAngle = 240);
+		GroveRotaryAngleSensor(GrovePin pins, unsigned int maxMesurement = 690, unsigned int maxAngle = 240);
 		void initialize();
 		float getPosition();
 		float getAngle();
-		void setMaxMesurement(float maxPosition);
+		void setMaxMesurement(unsigned int maxMesurement);
 		void setMaxAngle(unsigned int maxAngle);
 };
 

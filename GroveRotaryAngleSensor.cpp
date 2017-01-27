@@ -29,7 +29,7 @@ float GroveRotaryAngleSensor::getAngle() {
 	return angle;
 }
 
-void GroveRotaryAngleSensor::setMaxMesurement(float maxMesurement) {	
+void GroveRotaryAngleSensor::setMaxMesurement(unsigned int maxMesurement) {	
 	this->_maxMesurement = maxMesurement;
 }
 
