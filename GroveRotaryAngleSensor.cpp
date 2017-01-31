@@ -1,14 +1,12 @@
 #include "../Grove/Grove.h"
 #include "GroveRotaryAngleSensor.h"
 
-GroveRotaryAngleSensor::GroveRotaryAngleSensor(GrovePin pins, unsigned int maxMesurement, unsigned int maxAngle)
-{
+GroveRotaryAngleSensor::GroveRotaryAngleSensor() {}
+
+void GroveRotaryAngleSensor::initialize(GrovePin pins, unsigned int maxMesurement, unsigned int maxAngle) {	
 	this->_pinSensor = pins.pin1;
 	this->setMaxMesurement(maxMesurement);
 	this->setMaxAngle(maxAngle);
-}
-
-void GroveRotaryAngleSensor::initialize() {	
 	pinMode(this->_pinSensor, INPUT);
 }
 
