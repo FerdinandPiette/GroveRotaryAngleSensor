@@ -2,7 +2,7 @@
 #define GroveRotaryAngleSensor_H
 
 #include <Arduino.h>
-
+#include <Grove.h>
 
 class GroveRotaryAngleSensor {
 	private:

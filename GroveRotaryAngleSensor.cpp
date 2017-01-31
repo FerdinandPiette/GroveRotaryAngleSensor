@@ -1,4 +1,3 @@
-#include "../Grove/Grove.h"
 #include "GroveRotaryAngleSensor.h"
 
 GroveRotaryAngleSensor::GroveRotaryAngleSensor() {}
